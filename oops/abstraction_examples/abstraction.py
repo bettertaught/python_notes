@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
- 
- 
+
+
 class AbstractOperation:
     __metaclass__ = ABCMeta
 

@@ -1,7 +1,6 @@
-class Car(object):
-
+class Car:
     def __init__(self, make='Ford', model='Pinto', year='1971', color='orange'):
-        self.__make = make
+        self._make = make
         self.__model = model
         self.__year = year
         self.__color = color
@@ -14,5 +13,6 @@ class Car(object):
 
 
 mycar = Car()
-# print mycar._Car__model # This is how you access __ attribute
-print mycar.__model
+
+print mycar._Car__model # This is how you access __ attribute
+# print mycar.__model

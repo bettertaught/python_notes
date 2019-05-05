@@ -1,5 +1,6 @@
 import math
- 
+
+
 class Shape:
  
     def __init__(self, color='black', filled=False):
@@ -17,7 +18,7 @@ class Shape:
  
     def set_filled(self, filled):
         self.__filled = filled
- 
+
  
 class Rectangle(Shape):
  
@@ -43,7 +44,7 @@ class Rectangle(Shape):
  
     def get_perimeter(self):
         return 2 * (self.__length + self.__breadth)
- 
+
  
 class Circle(Shape):
     def __init__(self, radius):
@@ -61,7 +62,7 @@ class Circle(Shape):
  
     def get_perimeter(self):
         return 2 * math.pi * self.__radius
- 
+
  
 r1 = Rectangle(10.5, 2.5)
  
@@ -73,7 +74,7 @@ r1.set_filled(True)
 print("Is rectangle r1 filled ? ", r1.get_filled())
 r1.set_color("orange")
 print("Color of rectangle r1: ", r1.get_color())
- 
+
 c1 = Circle(12)
 print("\n")
 print("Area of circle c1:", format(c1.get_area(), "0.2f"))

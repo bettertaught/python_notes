@@ -1,5 +1,8 @@
+import math
+
+
 class Circle:
-    def __int__(self, color, filled, radius):
+    def __init__(self, color, filled, radius):
         self.__color = color
         self.__filled = filled
         self.__radius = radius      
@@ -8,8 +11,9 @@ class Circle:
         return self.__color
  
     def set_color(self, color):
-        return self.__color = color
- 
+        self.__color = color
+        return self.__color
+
     def is_filled(self):
         return self.__filled
  
@@ -18,4 +22,3 @@ class Circle:
  
     def get_area(self):
         return math.pi * self.__radius ** 2
-

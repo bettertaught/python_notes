@@ -1,5 +1,5 @@
 class Rectangle:
-    def __int__(self, color, filled, width, length):
+    def __init__(self, color, filled, width, length):
         self.__color = color
         self.__filled = filled
         self.__width = width
@@ -9,7 +9,8 @@ class Rectangle:
         return self.__color
  
     def set_color(self, color):
-        return self.__color = color
+        self.__color = color
+        return self.__color
  
     def is_filled(self):
         return self.__filled
@@ -17,6 +18,5 @@ class Rectangle:
     def set_filled(self, filled):
         return self.__filled
  
-    def get_area():
+    def get_area(self):
         return self.__width * self.__length
-
